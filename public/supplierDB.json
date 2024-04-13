@@ -1,0 +1,12 @@
+[{
+    "supplierId": "001",
+    "supplierName": "Team 365",
+    "contactPerson": "John Doe",
+    "email": "john.doe@team365.com",
+    "phone": "+1234567890",
+    "street": "123 Main Street",
+    "city": "Anytown",
+    "state": "CA",
+    "postalCode": "12345",
+    "country": "USA"
+}]

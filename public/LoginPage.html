@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TactGearz - Inventory System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Bar at the top-->
+    <div class="top-bar">
+      <div class="container">
+        <img src="Assets/TactGearzLogo.jpg" alt="TactGearzLogo" />
+        <h1>TactGearz - Inventory System</h1>
+      </div>
+    </div>
+
+    <!--Login Panel -->
+    <div class="container login-container">
+      <div class="login-panel">
+        <h2 class="loginPageH2Style">Employee Login</h2>
+        <form id="loginForm">
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter your ID"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+          />
+          <button type="submit" onclick="Login()">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/Classes/CEO.js"></script>
+  </body>
+</html>

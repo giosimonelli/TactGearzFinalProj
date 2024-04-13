@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TactGearz - Home Page</title>
+    <link rel="stylesheet" href="purchaseOrderPage.css">
+</head>
+
+<body>
+    <!-- Bar at the top -->
+    <div class="login-topbar">
+        <div class="container">
+            <img src="Assets/TactGearzLogo.jpg" alt="TactGearzLogo">
+            <h1>TactGearz - Inventory System</h1>
+        </div>
+    </div>
+
+    <!-- Left Menu -->
+    <div class="side-menu">
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="TransferPage.html">Transfer</a></li>
+            <li><a href="OrderPage.html">Orders</a></li>
+            <li><a href="ProductPage.html">Products</a></li>
+            <li><a href="CustomerPage.html">Customers</a></li>
+            <li><a href="Purchase-OrderPage.html">Purchase Order</a></li>
+        </ul>
+    </div>
+
+    <!-- Main content container -->
+    <div class="content">
+        <h2 class="table-name">Purchase Order List</h2>
+        
+        <!-- Where the table is made -->
+        <table>
+            <thead id="tableHeader">
+                <tr>
+                    <th>ID</th>
+                    <th>Supplier Name</th>
+                    <th>Date</th>
+                    <th>Total</th>
+                    <th>Items</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="purchaseorderTableBody">
+            </tbody>
+        </table>
+
+        <!-- Buttons -->
+        <div class="button-container" id="button-container">
+            <button id="addPurchaseOrderBtn">Create new Purchase Order</button>
+        </div>
+
+        <!--Toast Notification-->
+        <div id="toast-container"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="purchase-orderPage.js"></script>
+</body>
+</html>

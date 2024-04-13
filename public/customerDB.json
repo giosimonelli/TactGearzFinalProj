@@ -1,0 +1,82 @@
+[
+  {
+      "id": 1,
+      "firstname": "Emma",
+      "lastname": "Smith",
+      "phonenumber": "123-456-7890",
+      "address": "123 Main St",
+      "shippingaddress": "456 Elm St",
+      "email": "emma@example.com",
+      "subscription": "Yes"
+  },
+  {
+      "id": 2,
+      "firstname": "Liam",
+      "lastname": "Johnson",
+      "phonenumber": "234-567-8901",
+      "address": "456 Oak St",
+      "shippingaddress": "789 Maple St",
+      "email": "liam@example.com",
+      "subscription": "No"
+  },
+  {
+      "id": 3,
+      "firstname": "Olivia",
+      "lastname": "Williams",
+      "phonenumber": "345-678-9012",
+      "address": "789 Pine St",
+      "shippingaddress": "123 Cedar St",
+      "email": "olivia@example.com",
+      "subscription": "Yes"
+  },
+  {
+      "id": 4,
+      "firstname": "Noah",
+      "lastname": "Jones",
+      "phonenumber": "456-789-0123",
+      "address": "234 Birch St",
+      "shippingaddress": "567 Walnut St",
+      "email": "noah@example.com",
+      "subscription": "No"
+  },
+  {
+      "id": 5,
+      "firstname": "Ava",
+      "lastname": "Brown",
+      "phonenumber": "567-890-1234",
+      "address": "678 Cherry St",
+      "shippingaddress": "901 Pine St",
+      "email": "ava@example.com",
+      "subscription": "Yes"
+  },
+  {
+      "id": 6,
+      "firstname": "William",
+      "lastname": "Davis",
+      "phonenumber": "678-901-2345",
+      "address": "789 Willow St",
+      "shippingaddress": "234 Elm St",
+      "email": "william@example.com",
+      "subscription": "No"
+  },
+  {
+      "id": 7,
+      "firstname": "Sophia",
+      "lastname": "Miller",
+      "phonenumber": "789-012-3456",
+      "address": "890 Spruce St",
+      "shippingaddress": "345 Oak St",
+      "email": "sophia@example.com",
+      "subscription": "Yes"
+  },
+  {
+      "id": 8,
+      "firstname": "James",
+      "lastname": "Wilson",
+      "phonenumber": "890-123-4567",
+      "address": "901 Cedar St",
+      "shippingaddress": "456 Maple St",
+      "email": "james@example.com",
+      "subscription": "No"
+  }
+]

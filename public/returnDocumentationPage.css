@@ -1,0 +1,352 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #1e1e1e; /* Dark background */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container for top bar */
+.container {
+    display: flex;
+    align-items: center;
+}
+
+/* Top bar */
+.top-bar {
+    background: #0041BE;
+    padding: 20px 0;
+}
+
+.top-bar img {
+    width: auto;
+    height: 50px;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.top-bar h1 {
+    margin-left: 20px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Container for login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(75vh - 150px); /* Adjust height according to your needs */
+}
+
+/* Login panel */
+.login-panel {
+    width: 300px;
+    padding: 20px;
+    background: #2c2c2c; /* Darker panel background */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-panel h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 20px; /* Slightly larger font size */
+}
+
+.login-panel input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555; /* Slightly lighter border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #444; /* Slightly lighter background */
+    color: #fff;
+}
+
+.login-panel input::placeholder {
+    color: #888; /* Lighter placeholder text */
+}
+
+.login-panel button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background: #4CAF50; /* Green button */
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-panel button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.loginPageH2Style {
+    text-align: center;
+}
+
+/* Top bar for login */
+.login-topbar {
+    background: #0041BE;
+    padding: 10px 0;
+}
+
+.login-topbar img {
+    margin-left: 20px;
+    width: auto;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.login-topbar h1 {
+    margin-left: 20px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Side menu */
+.side-menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 200px; /* Adjust width as needed */
+    height: auto; /* Make it full height */
+    background-color: #333; /* Dark background color */
+    color: white;
+    overflow-y: auto; /* Add scrollbar when needed */
+}
+
+/* Style for the menu items */
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    padding: 10px;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-menu ul li a:hover {
+    background-color: #555; /* Darker background color on hover */
+}
+
+/* Style for the content area */
+.content {
+    margin-left: 200px; /* Adjust to accommodate the menu width */
+    padding: 20px;
+}
+
+h2 {
+    color: #fff;
+}
+
+td {
+    color: black;
+    text-align: center;
+    width: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+th {
+    color: #fff;
+    background-color: #0041BE;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-bottom: 5px solid black;
+}
+
+table {
+    border-style: solid;
+    border-color: black;
+    border-collapse: collapse;
+    margin-left: 400px;
+}
+
+.table-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    background: #007bff; /* Green button */
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 300px;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 9999; /* Ensure it's above other content */
+    display: none; /* Hide by default */
+}
+
+.table-name {
+    text-align: left;
+    padding-left: 400px;
+    color: white;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.purchase-order-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background: #2c2c2c; /* Darker panel background */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: left; /* Align items to the left */
+}
+
+.purchase-order-panel h3 {
+    margin-bottom: 20px;
+    font-size: 20px; /* Slightly larger font size */
+}
+
+.purchase-order-panel label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.purchase-order-panel input, .purchase-order-panel textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555; /* Slightly lighter border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #444; /* Slightly lighter background */
+    color: #fff;
+}
+
+.purchase-order-panel button {
+    width: 300px;
+    padding: 10px;
+    background: #007bff; /* Green button */
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    align-self: flex-end; /* Align button to the right */
+}
+
+.purchase-order-panel button:hover {
+    background-color: #0056b3; /* Darker green on hover */
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Adjustments for buttons */
+.button-container button {
+    width: 200px;
+    padding: 10px;
+    background: #007bff; /* Green button */
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #0056b3; /* Darker green on hover */
+}
+
+/* Style for the first row of the table */
+#productTableBody tr:first-child:hover {
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.return-information {
+    padding-left: 250px;
+    color: white; /* Added color property */
+}
+
+.return-information h2 {
+    color: white; /* Added color property */
+}
+
+.return-information h3 {
+    color: white; /* Added color property */
+}
+
+.confirmation-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.confirm-button {
+    background-color: #007bff; /* Grayish color */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.confirm-button:disabled {
+    background-color: #cccccc; /* Light gray when disabled */
+    cursor: not-allowed;
+}
+
+
+

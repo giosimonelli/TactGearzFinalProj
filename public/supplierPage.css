@@ -1,0 +1,217 @@
+/* Global styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #1e1e1e; /* Dark background */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Top bar styles */
+.top-bar {
+    background: #0041BE;
+    padding: 10px 0;
+}
+.top-bar .container {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar img {
+    width: auto;
+    height: 50px;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.top-bar h1 {
+    margin-left: 20px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Side menu styles */
+.side-menu {
+    position: fixed;
+    top: 80px; /* Adjust top position */
+    left: 0;
+    width: 200px; /* Adjust width as needed */
+    height: auto; 
+    background-color: #333; /* Dark background color */
+    color: white;
+    overflow-y: auto; /* Add scrollbar when needed */
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    padding: 10px;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-menu ul li a:hover {
+    background-color: #555; /* Darker background color on hover */
+}
+
+/* Content styles */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.supplier-details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.supplier-details {
+    width: 50%;
+    color:white;
+}
+
+.product-image {
+    width: 40%;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    gap: 20px; /* Add some space between buttons */
+}
+
+.buttons-container button {
+    width: 100%; /* Make buttons the same width */
+    padding: 15px; /* Add padding to buttons */
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: white;
+}
+
+.buttons-container button:hover{
+    background-color: #0056b3;
+}
+
+.return-button-container {
+    margin-top: 20px; /* Add margin top */
+    display: flex;
+    justify-content: right; /* Align items horizontally */
+    margin-right: 40px;
+}
+
+.return-button-container button {
+    width: 200px; /* Adjust width */
+    padding: 15px; /* Add padding */
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: white;
+}
+
+.return-button-container button:hover{
+    background-color: #0056b3;
+}
+
+/* Contact panel styles */
+.contact-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2c2c2c; /* Darker panel background */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: #fff;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.contact-panel h3 {
+    margin-bottom: 20px;
+}
+
+.contact-panel label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-panel input[type="text"],
+.contact-panel textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555; /* Slightly lighter border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #444; /* Slightly lighter background */
+    color: #fff;
+}
+
+.contact-panel textarea {
+    resize: none; /* Disable textarea resizing */
+}
+
+.contact-panel button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff; /* Green button */
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-panel button:hover {
+    background-color: #0056b3; /* Darker green on hover */
+}
+
+.contact-panel .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contact-panel .close-button:hover {
+    color: red; /* Change color on hover */
+}
+
+/* Confirmation panel styles */
+.confirmation-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}

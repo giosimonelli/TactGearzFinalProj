@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TactGearz - Home Page</title>
+    <link rel="stylesheet" href="returnDocumentationPage.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Add jQuery -->
+    <script src="returnDocumentationPage.js"></script> <!-- Include the new JavaScript file -->
+</head>
+
+<body>
+<!-- Bar at the top -->
+<div class="login-topbar">
+    <div class="container">
+        <img src="Assets/TactGearzLogo.jpg" alt="TactGearzLogo">
+        <h1>TactGearz - Inventory System</h1>
+    </div>
+</div>
+
+<!-- Left Menu -->
+<div class="side-menu">
+    <ul>
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="TransferPage.html">Transfer</a></li>
+        <li><a href="OrderPage.html">Orders</a></li>
+        <li><a href="ProductPage.html">Products</a></li>
+        <li><a href="CustomerPage.html">Customers</a></li>
+        <li><a href="Purchase-OrderPage.html">Purchase Order</a></li>
+    </ul>
+</div>
+
+<div class="return-information" id="return-information" data-default-color="#FFD700">
+    <h2>Return Documentation</h2>
+    <select name="return-status" id="return-status-select">
+        <option value="New" class="newReturn" style="background-color: #FF5733;">New</option>
+        <option value="Processing" class="processingReturn" style="background-color: #FFD700;">Processing</option>
+        <option value="Delivery in Progress" class="delivery-in-progressReturn" style="background-color: #00FFFF;">Delivery in Progress</option>
+        <option value="Delivered" class="deliveredReturn" style="background-color: #32CD32;">Delivered</option>
+        <option value="Supplier Processing" class="supplier-processingReturn" style="background-color: #9400D3;">Supplier Processing</option>
+        <option value="Supplier Sent Return" class="supplier-sentReturn" style="background-color: #8A2BE2;">Supplier sent Return</option>
+        <option value="Replacement Delivered" class="replacement-delivered-Return" style="background-color: #FF4500;">Replacement Delivered</option>
+    </select>
+    <h3>General Information</h3>
+    <p><strong>Order ID:</strong> 001</p>
+    <p><strong>Product ID:</strong> 001</p>
+    <p><strong>Product Name:</strong> SCAR-H CQB LICENSED MK-17</p>
+    <p><strong>Return Reason:</strong> Defective Product</p> <!-- Added return reason -->
+    <br>
+    <h3>Customer Information</h3>
+    <p><strong>Customer ID:</strong> 001</p>
+    <p><strong>Customer Name:</strong> Emma Smith</p>
+    <br>
+    <h3>Supplier Information</h3>
+    <p><strong>Supplier ID:</strong> 001</p>
+    <p><strong>Supplier Name:</strong> Team 365</p>
+    <br>
+    <h3>Shipping Information</h3>
+    <p><strong>Shipment ID:</strong> 0X78M2</p>
+    <p><strong>Shipping Department Name:</strong> Fedex</p>
+    <p><strong>Shipment Confirmed?</strong> <span id="shipment-confirmed"> No</span></p>
+
+</div>
+
+
+<button id="confirm-shipment-btn" class="confirm-button">Confirm Shipment</button>
+
+
+</body>
+</html>

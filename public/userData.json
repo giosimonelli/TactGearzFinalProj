@@ -1,0 +1,23 @@
+[
+    {
+        "username": "1111",
+        "password": "password1",
+        "First Name": "Cynthia",
+        "Last Name": "Crispino",
+        "Role": "CEO"
+    },
+    {
+        "username": "2222",
+        "password": "password2",
+        "First Name": "Michael",
+        "Last Name": "Pierce",
+        "Role": "Inventory Clerk"
+    },
+    {
+        "username": "3333",
+        "password": "password3",
+        "First Name": "Mark",
+        "Last Name": "Andrews",
+        "Role": "Inventory Clerk"
+    }
+]

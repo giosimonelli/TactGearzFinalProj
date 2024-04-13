@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TactGearz - Home Page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <!-- Bar at the top -->
+    <div class="login-topbar">
+        <div class="container">
+            <img src="Assets/TactGearzLogo.jpg" alt="TactGearzLogo">
+            <h1>TactGearz - Inventory System</h1>
+        </div>
+    </div>
+
+    <!-- Left Menu -->
+    <div class="side-menu">
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="TransferPage.html">Transfer</a></li>
+            <li><a href="OrderPage.html">Orders</a></li>
+            <li><a href="ProductPage.html">Products</a></li>
+            <li><a href="CustomerPage.html">Customers</a></li>
+            <li><a href="Purchase-OrderPage.html">Purchase Order</a></li>
+        </ul>
+    </div>
+    
+
+
+
+<h2 class="table-name">Product List</h2>
+    
+<!-- Where the table is made -->
+     <table>
+        <thead id = "tableHeader">
+          <tr>
+            <th>ID</th>
+            <th>Product Name</th>
+            <th>Color</th>
+            <th>Size</th>
+            <th>Price</th>
+            <th>Barcode</th>
+            <th>Weight</th>
+            <th>Category</th>
+            <th>Quantity In-Store</th>
+            <th>Quantity In Warehouse</th>
+            <th>Safety Stock Level</th>
+          </tr>
+        </thead>
+        <tbody id="productTableBody">
+        </tbody>
+      </table>
+     
+    
+<!--Toast Notification-->
+    <div id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="productPage.js"></script>
+    
+    
+
+    <!-- Buttons -->
+    <div class="button-container" id="button-container">
+        <button id="reviewStockLevelBtn">Review Stock Level</button>
+        <button id="addProductBtn">Add Product</button>
+        </div>
+</body>
+</html>

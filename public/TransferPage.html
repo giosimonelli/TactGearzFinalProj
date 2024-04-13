@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TactGearz - Home Page</title>
+    <link rel="stylesheet" href="transfer.css">
+    <script onloadstart=""></script>
+    </head>
+
+    <body>
+        </div>
+        <!--Bar at the top-->
+        <div class="login-topbar">
+            <div class="container">
+                <img src="Assets/TactGearzLogo.jpg" alt="TactGearzLogo">
+                <h1>TactGearz - Inventory System</h1>
+            </div>
+        </div>
+
+        
+
+        <!--Left Menu-->
+        <div class="side-menu">
+            <ul>
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="TransferPage.html">Transfer</a></li>
+                <li><a href="OrderPage.html">Orders</a></li>
+                <li><a href="ProductPage.html">Products</a></li>
+                <li><a href="CustomerPage.html">Customers</a></li>
+                <li><a href="Purchase-OrderPage.html">Purchase Order</a></li>
+            </ul>
+        </div>
+
+        <!DOCTYPE html>
+
+    <div class="container">
+        <h1>Product Transfer</h1>
+        <form action="submit_transfer.php" method="post">
+            <div class="form-group">
+                <label for="product">Select Product:</label>
+                <select name="product" id="product">
+                    <option value="SCAR-H CQB LICENSED MK-18">SCAR-H CQB LICENSED MK-18</option>
+                    <option value="AR OVERMOLDED ENHANCED PISTOL GRIP">AR OVERMOLDED ENHANCED PISTOL GRIP</option>
+                    <option value="V2 TACTICAL LONG SLEEVE SHIRT">V2 TACTICAL LONG SLEEVE SHIRT</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="text" name="quantity" id="quantity">
+            </div>
+            <div>
+                <button id = 'addTransferButton'>Add Product</button>
+            </div>
+            <div class="form-group">
+                <label for="shippingDepartment">Shipping Department:</label>
+                <input type="text" name="shippingDepartment" id="shippingDepartment">
+            </div>
+            <div>
+            <button id = 'transferButton'>Transfer Product</button>
+            <button id = 'contactButton'>Contact Shipping Department</button>
+        </div>
+        </form>
+        <table id = 'transferTable'>
+            <thead id = "tableHeader">
+              <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody id="transferTableBody">
+            </tbody>
+          </table>
+    </div>
+</body>
+</html>
+    
+        <!-- Add Scripts below -->
+        <script src = 'transfer.js'></script>
+
+    </body>
+</html>

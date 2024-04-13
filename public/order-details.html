@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TactGearz - Home Page</title>
+    <link rel="stylesheet" href="OrderDetailsPage.css">
+</head>
+
+<body>
+    <!--Bar at the top-->
+    <div class="login-topbar">
+        <div class="container">
+            <img src="Assets/TactGearzLogo.jpg" alt="TactGearzLogo">
+            <h1>TactGearz - Inventory System</h1>
+        </div>
+    </div>
+
+    <!--Left Menu-->
+    <div class="side-menu">
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="TransferPage.html">Transfer</a></li>
+            <li><a href="OrderPage.html">Orders</a></li>
+            <li><a href="ProductPage.html">Products</a></li>
+            <li><a href="CustomerPage.html">Customers</a></li>
+            <li><a href="Purchase-OrderPage.html">Purchase Order</a></li>
+        </ul>
+    </div>
+
+    <div class="order-table">
+        <table>
+            <caption>Order #1 (Fulfilled)</caption>
+            <thead>
+                <tr>
+                    <th colspan="4">Item in Order Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" id="itemCheckbox" name="itemCheckbox"></td>
+                    <td>SCAR-H CQB LICENSED MK-17</td>
+                    <td>$669.99</td>
+                    <td>Perfect</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="button-container" id="button-container">
+        <button id="cancelButton">Cancel</button>
+        <button id="refundButton">Refund</button>
+        <button id="viewReturnFormButton">View Return Form</button>
+    </div>
+
+    <div class="amount-menu">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3">Payment Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Payment Status</td>
+                    <td></td>
+                    <td>Paid</td>
+                </tr>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>1 Item</td>
+                    <td>$669.99</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td></td>
+                    <td>$669.99</td>
+                </tr>
+                <tr>
+                    <td>Paid</td>
+                    <td></td>
+                    <td>$669.99</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class ="processPayment">
+        <button id = 'processPaymentButton'>Process Payment Button</button>
+    </div>
+
+    <div class="customer-info">
+        <table>
+            <thead>
+                <tr>
+                    <th>Customer</th>
+                    <th>Contact Information</th>
+                    <th>Shipping Address</th>
+                    <th>Billing Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Emma Smith</td>
+                    <td>emma@example.com</td>
+                    <td>456 Elm St</td>
+                    <td>Same as Shipping Address</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id = "customerContact">
+        <button id = 'customerContactButton'>Contact Customer</button>
+    </div>
+
+    <div id="toast-container"></div>
+
+    <script src="order-details.js"></script>
+</body>
+</html>
